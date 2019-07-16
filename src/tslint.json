@@ -1,18 +1,29 @@
 {
-  "extends": "../tslint.json",
+  "extends": [
+      "tslint:all"
+  ],
+  "defaultSeverity": "error",
   "rules": {
-    "directive-selector": [
-      true,
-      "attribute",
-      "app",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "app",
-      "page",
-      "kebab-case"
-    ]
+      "completed-docs": false,
+      "prefer-for-of": false,
+      "strict-type-predicates": false,
+      "only-arrow-functions": [
+          true,
+          "allow-named-functions"
+      ],
+      "no-inferrable-types": [
+          false,
+          "ignore-params",
+          "ignore-properties"
+      ],
+      "max-line-length": [
+          false,
+          170
+      ],
+      "align": [
+          false
+      ],
+      "no-unnecessary-type-assertion": false,
+      "prefer-switch": false
   }
 }
